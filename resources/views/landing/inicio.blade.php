@@ -21,7 +21,7 @@
   <body class="leading-normal tracking-normal text-indigo-400 m-6 bg-cover bg-fixed" style="background-image: url('{{ asset('header.png') }}');">
     <div class="h-full">
       <!--Nav-->
-      <div class="w-full container mx-auto">
+      <div class="w-full container mx-auto fixed left-0 top-0 bg-gradient-to-b from-black to-transparent z-50">
         <div class="w-full flex items-center justify-between">
         <a class="flex items-center text-indigo-400 no-underline hover:no-underline font-bold max-w-100px" href="#">
           <img src="{{ asset('baner/logo.png') }}" class="w-32 h-auto"/>
@@ -72,26 +72,27 @@
         <!--Left Col-->
         <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
           <h1 class="my-4 text-3xl md:text-5xl text-white opacity-75 font-bold leading-tight text-center md:text-left">
-            Main
+            Muralismo en 
             <span class="bg-clip-text text-transparent bg-gradient-to-r from-green-400 via-pink-500 to-purple-500">
-              Hero Message
+              San Carlos
             </span>
-            to sell yourself!
+            Conoce
+            Memoria todo color
           </h1>
           <p class="leading-normal text-base md:text-2xl mb-8 text-center md:text-left">
-            Sub-hero message, not too long and not too short. Make it just right!
+            conoce la verdadera historia de san Carlos tierra de progreso... 
           </p>
 
           <form class="bg-gray-900 opacity-75 w-full shadow-lg rounded-lg px-8 pt-6 pb-8 mb-4">
             <div class="mb-4">
               <label class="block text-blue-300 py-2 font-bold mb-2" for="emailaddress">
-                Signup for our newsletter
+                Contactanos para reservar una ruta.
               </label>
               <input
                 class="shadow appearance-none border rounded w-full p-3 text-gray-700 leading-tight focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 id="emailaddress"
                 type="text"
-                placeholder="you@somewhere.com"
+                placeholder="danos tu contacto y nos comunicaremos con tigo"
               />
             </div>
 
@@ -100,7 +101,7 @@
                 class="bg-gradient-to-r from-purple-800 to-green-500 hover:from-pink-500 hover:to-green-500 text-white font-bold py-2 px-4 rounded focus:ring transform transition hover:scale-105 duration-300 ease-in-out"
                 type="button"
               >
-                Sign Up
+                Enviar
               </button>
             </div>
           </form>
@@ -108,7 +109,7 @@
 
         <!--Right Col-->
         <div class="w-full xl:w-3/5 p-12 overflow-hidden">
-          <img class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src="macbook.svg" />
+          <img class="mx-auto w-full md:w-4/5 transform -rotate-6 transition hover:scale-105 duration-700 ease-in-out hover:rotate-6" src="{{ asset('baner/baner1.jpg') }}" />
         </div>
 
         <div class="mx-auto md:pt-16">
@@ -117,7 +118,7 @@
           </p>
           <div class="flex w-full justify-center md:justify-start pb-24 lg:pb-0 fade-in">
             <img src="{{ asset('App Store.svg') }}" class="h-12 pr-12 transform hover:scale-125 duration-300 ease-in-out" />
-            <img src="Play Store.svg" class="h-12 transform hover:scale-125 duration-300 ease-in-out" />
+            <img src="{{ asset('Play Store.svg') }}" class="h-12 transform hover:scale-125 duration-300 ease-in-out" />
           </div>
         </div>
 
